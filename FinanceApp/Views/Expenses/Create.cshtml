@@ -1,0 +1,34 @@
+﻿@model FinanceApp.Models.Expense
+
+<div class="container mt-5">
+    <div class="card shadow-lg p-4">
+        <h2 class="text-center mb-4 text-primary">Add a New Expense</h2>
+
+        <form asp-action="Create" method="post">
+            <div class="mb-3">
+                <label asp-for="Description" class="form-label fw-bold">Description</label>
+                <input asp-for="Description" class="form-control" placeholder="e.g. Grocery shopping" />
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="Amount" class="form-label fw-bold">Amount (€)</label>
+                <input asp-for="Amount" class="form-control" placeholder="e.g. 45.60" />
+                <span asp-validation-for="Amount" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="Category" class="form-label fw-bold">Category</label>
+                <input asp-for="Category" class="form-control" placeholder="e.g. Food, Transport" />
+                <span asp-validation-for="Category" class="text-danger"></span>
+            </div>
+
+            <div class="d-flex justify-content-between mt-4">
+                <a asp-controller="Home" asp-action="Index" class="btn btn-outline-secondary">
+                    ⬅️ Back to Home
+                </a>
+                <button type="submit" class="btn btn-success">💾 Add Expense</button>
+            </div>
+        </form>
+    </div>
+</div>

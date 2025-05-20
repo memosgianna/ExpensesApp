@@ -1,0 +1,51 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container mt-5">
+
+    <div class="text-center">
+        <h1 class="display-4">Welcome to FinanceApp 💼</h1>
+        <p class="lead mt-3">
+            Your personal space to track, manage, and take control of your financial life.
+        </p>
+    </div>
+
+    <div class="row justify-content-center mt-4">
+        <div class="col-md-8">
+            <div class="alert alert-info text-dark fs-5 shadow-sm">
+                <strong>Why track your expenses?</strong><br />
+                In today’s fast-paced world, it’s easier than ever to lose track of your money. From subscriptions and daily coffee runs, to unexpected bills — small amounts add up quickly. <br /><br />
+                With <strong>FinanceApp</strong>, you can:
+                <ul class="mt-2">
+                    <li>🔍 Get a clear view of where your money goes</li>
+                    <li>📈 Identify spending patterns and bad habits</li>
+                    <li>💡 Make smarter budgeting decisions</li>
+                    <li>🔒 Keep your data safe and organized</li>
+                </ul>
+                Take the first step towards financial freedom by managing your expenses with clarity and ease.
+            </div>
+        </div>
+    </div>
+
+    <div class="row justify-content-center mt-4">
+        <div class="col-md-6">
+            <div class="card shadow-lg border-0">
+                <div class="card-body text-center">
+                    <h4 class="card-title mb-4">What would you like to do?</h4>
+
+                    <a asp-controller="Expenses" asp-action="Index" class="btn btn-outline-primary btn-lg mb-3 w-100">
+                        📊 View Your Expenses
+                    </a>
+
+                    <a asp-controller="Expenses" asp-action="Create" class="btn btn-outline-success btn-lg w-100">
+                        ➕ Add a New Expense
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
